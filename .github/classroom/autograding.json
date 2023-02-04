@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Practicing For Loops Test",
+      "setup": "",
+      "run": "./gradlew forloops-practicingforloops-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Practicing While Loops Test",
+      "setup": "",
+      "run": "./gradlew whileloops-practicingwhileloops-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Array Analyzer Test",
+      "setup": "",
+      "run": "./gradlew programminglogic-arrayanalyzer-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
