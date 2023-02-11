@@ -18,7 +18,7 @@ public class Application {
         // Write your code here
 
         int index = 0;
-        while (index < 2) {
+        while (index < 10) {
             System.out.print(index + " ");  // Log like this using .print
             index++;
         }
@@ -37,12 +37,13 @@ public class Application {
         //
         // Write your code here
 
-//         index = 0;
-//         while (index < 15) {
-//           System.out.print(index + " ");
-//         }
-//
-//        System.out.println();
+         int index = 0;
+         while (index <= 15) {
+           System.out.print(index + " ");
+           index ++;
+         }
+
+        System.out.println();
     }
     public static void exerciseThree(){
         // ----------------------------------------------------------------------------------------------
@@ -53,8 +54,12 @@ public class Application {
         // - Hint: Look at the reading, there is an example of this.
         // - Hint 2: Remember to set your initial index value
         // Write your code here
-
-
+        int loop = 1;
+        while (loop <= 20){
+            System.out.print(loop + " ");
+            loop ++;
+        }
+        System.out.println();
     }
     public static void exerciseFour(){
         // ----------------------------------------------------------------------------------------------
@@ -65,9 +70,15 @@ public class Application {
         //   (This should include the number 20, and the number 2, but not include the number 0)
         //
         // Write your code here
+        int x = 2;
+        while(x <= 20) {
+        System.out.print(x + " ");
+        x+=2;
+        }
+        System.out.println();
+        }
 
 
-    }
     public static void exerciseFive(){
         // ----------------------------------------------------------------------------------------------
         System.out.println("Exercise Five");
@@ -77,8 +88,12 @@ public class Application {
         //   (This should include the number 9, and the number 1, but not include the number 0)
         //
         // Write your code here
-
-
+        int banana = 1;
+        while (banana < 20){
+            System.out.print(banana + " ");
+            banana+=2;
+        }
+        System.out.println();
     }
     public static void exerciseSix(){
         // ----------------------------------------------------------------------------------------------
@@ -89,8 +104,12 @@ public class Application {
         //   (This should include the number 100, and the number 5)
         //
         // Write your code here
-
-
+        int j = 5;
+        while(j <= 100){
+            System.out.print(j + " ");
+            j += 5;
+        }
+    System.out.println();
     }
     public static void exerciseSeven(){
         // ----------------------------------------------------------------------------------------------
@@ -101,8 +120,12 @@ public class Application {
         //   (This should include the number 20, but not include the number 0)
         //
         // Write your code here
-
-
+        int neg = 20;
+        while(neg > 0){
+            System.out.print(neg + " ");
+            neg --;
+        }
+    System.out.println();
     }
     public static void exerciseEight(){
         // ----------------------------------------------------------------------------------------------
@@ -113,8 +136,12 @@ public class Application {
         //   (This should include the number 20, but not include the number 0)
         //
         // Write your code here
-
-
+        int backwards = 20;
+        while (backwards > 0){
+            System.out.print(backwards + " ");
+            backwards-=2;
+        }
+    System.out.println();
     }
     public static void exerciseNine(){
         // ----------------------------------------------------------------------------------------------
@@ -125,8 +152,13 @@ public class Application {
         //   (This should include the number 19, but not include the number 0)
         //
         // Write your code here
+    int odd = 19;
+    while (odd > 0){
+        System.out.print(odd + " ");
+        odd -= 2;
 
-
+    }
+    System.out.println();
     }
     public static void exerciseTen(){
         // ----------------------------------------------------------------------------------------------
@@ -137,8 +169,12 @@ public class Application {
         //   (This should include the number 100, but not include the number 0)
         //
         // Write your code here
-
-
+    int last = 100;
+    while(last > 0){
+        System.out.print(last + " ");
+        last -= 5;
+    }
+    System.out.println();
     }
 
 

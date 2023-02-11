@@ -1,5 +1,8 @@
 package com.kenzie.practicingforloops;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Application {
     /***********************/
     /* For Loops           */
@@ -14,7 +17,7 @@ public class Application {
         //
         // Write your code here
 
-        for (int num = 0; num < 2; num++) {
+        for (int num = 0; num < 10; num++) {
             System.out.print(num + " ");  // Log like this using .print
         }
 
@@ -30,8 +33,10 @@ public class Application {
         //   (This should include the number 20, but not include the number 0)
         //
         // Write your code here
-
-
+    for(int x = 1; x <= 20; x++){
+        System.out.print(x + " ");
+    }
+    System.out.println();
     }
 
     public static void exerciseThree(){
@@ -43,8 +48,10 @@ public class Application {
         //   (This should include the number 20, and the number 2, but not include the number 0)
         //
         // Write your code here
-
-
+    for(int y = 2; y <= 20; y+=2){
+        System.out.print(y + " ");
+    }
+    System.out.println();
 
     }
     public static void exerciseFour(){
@@ -52,7 +59,7 @@ public class Application {
         // The following exercises will use the numbers array below
         // - First fix this int array to have the proper syntax for declaring an array
 
-        // int numbers = [22, 15, 10, 19, 36, 2, 5, 20];
+        int[] numbers = new int[]{22, 15, 10, 19, 36, 2, 5, 20};
 
         // ----------------------------------------------------------------------------------------------
         System.out.println("Exercise Four");
@@ -60,8 +67,10 @@ public class Application {
         // - Have your loop iterate through every number in the numbers array, printing the number to the console.
         //
         // Write your code here
-
-
+        for(int each: numbers){
+            System.out.print(each + " ");
+        }
+        System.out.println();
 
     }
     public static void exerciseFive(){
@@ -73,8 +82,13 @@ public class Application {
         //
         // Write your code here
         int [] numbers = {22, 15, 10, 19, 36, 2, 5, 20};
+        for(int list: numbers){
+            if(list < 20){
+                System.out.print(list + " ");
+            }
 
-
+        }
+        System.out.println();
     }
     public static void exerciseSix(){
         // ----------------------------------------------------------------------------------------------
@@ -85,9 +99,18 @@ public class Application {
         // - Hint 2: Remember that 0 times anything is 0.  So your result variable should not start at zero :)
         //
         // Write your code here
+        //I worked with the following outside help: Author: Lea Cook
         int [] numbers = {22, 15, 10, 19, 36, 2, 5, 20};
+        int total = 1;
+        for(int x:numbers){
 
+            total = total*x;
+
+        }
+
+        System.out.println(total);
     }
+
     public static void exerciseSeven(){
         // ----------------------------------------------------------------------------------------------
         System.out.println("Exercise Seven");
@@ -97,26 +120,55 @@ public class Application {
         //   (But don't hardcode that, find it with a loop...)
         //
         // Write your code here
+        /*
+            I found the following on Google:
+            Title: <Java program to find largest number in an array>
+            updated: July 2nd, 2017
+            Author <candid>
+            http://java.candidjava.com/tutorial/Java-program-to-find-the-largest-number-in-an-array.htm
+         */
         int [] numbers = {22, 15, 10, 19, 36, 2, 5, 20};
+        int large = numbers[0];
+        for(int i = 0; i <= numbers.length-1; i ++){
 
+            if(numbers[i] > large){
+                large = numbers[i];
+            }
 
-    }
-    public static void exerciseEight(){
+            }
+
+        System.out.print(large);
+        System.out.println();
+        }
+
+    public static void exerciseEight() {
         // ----------------------------------------------------------------------------------------------
         System.out.println("Exercise Eight");
         // - Using two loops, filter out every number smaller than 10 from the numbers array.
-        // - 1) You can loop through once to find the size of your new array.
-        // - 2) Initialize a new array with the length obtained from step 1.
-        // - 3) Loop through numbers array again to put numbers larger than or equal to 10 into the new array.
-        // - 4) Print your new array to the console.
         // Note: check out the Arrays.toString() method!
         // Write your code here
-        int [] numbers = {22, 15, 10, 19, 36, 2, 5, 20};
-
-
+        int[] numbers = {22, 15, 10, 19, 36, 2, 5, 20};
+        int counter = 0;
+        // - 1) You can loop through once to find the size of your new array.
+        for(int x:numbers){
+            if(x >= 10){
+              counter++;
+            }
+        }
+        // - 2) Initialize a new array with the length obtained from step 1.
+       int j = 0;
+        int[] arrayInt = new int[counter];
+        // - 3) Loop through numbers array again to put numbers larger than or equal to 10 into the new array.
+        for(int s:numbers){
+            if(s >= 10){
+                arrayInt[j] = s;
+                j++;
+            }
+        }
+        // - 4) Print your new array to the console.
+    System.out.print(Arrays.toString(arrayInt));
 
     }
-
     public static void main(String[] args) {
 
         exerciseOne();

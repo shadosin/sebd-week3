@@ -6,15 +6,16 @@ public class ArrayPractice {
         String[] colors = {"red", "burgundy", "teal", "mauve", "chalk", "brick"};
 
         // Access the color "teal" of the array
-
+        String teal = colors[2];
         // Use System.out.println to print the value to the console.
+        System.out.println(teal);
     }
 
     public static void practiceTwo() {
         // Create an array named friends
         // Initialize it with three strings
         // Each string should be the name of a person
-
+        String [] friends = {"Bekah", "Palmer", "Nick"};
     }
 
     public static void practiceThree() {
@@ -24,7 +25,8 @@ public class ArrayPractice {
         // Using the length property, set the last item of favoriteNumbers to 100
 
         // Using the length property, set the second to last item in favoriteStrings to "Hello"
-
+        favoriteNumbers[favoriteNumbers.length-1] = 100;
+        favoriteStrings[favoriteStrings.length-2] = "Hello";
         // Put your code before this line.
         System.out.println("favoriteNumbers:");
         System.out.println(favoriteNumbers[0]);
