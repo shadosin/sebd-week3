@@ -86,6 +86,7 @@ public class ApplicationTest {
     @Test
     public void test_exerciseSix(){
         Assertions.assertTimeoutPreemptively(Duration.ofSeconds(TestTimeOut), () -> {
+            Application.exerciseSix();
             assertThat(outContent.toString(), containsString("451440000"));
         });
     }
